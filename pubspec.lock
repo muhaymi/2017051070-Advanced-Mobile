@@ -45,10 +45,10 @@ packages:
     dependency: "direct main"
     description:
       name: cupertino_icons
-      sha256: d57953e10f9f8327ce64a508a355f0b1ec902193f66288e8cb5070e7c47eeb2d
+      sha256: e35129dc44c9118cee2a5603506d823bab99c68393879edb440e0090d07586be
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.6"
+    version: "1.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -115,6 +115,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  screens:
+    dependency: "direct main"
+    description:
+      name: screens
+      sha256: "853cbecef256910e5c1062cfc5c4c83f44fcd942aba30f806d8ba5ab4917ebf7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.5.0"
   sky_engine:
     dependency: transitive
     description: flutter
