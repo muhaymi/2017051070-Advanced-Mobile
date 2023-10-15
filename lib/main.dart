@@ -1,6 +1,9 @@
+// sign
 import 'package:flutter/material.dart';
-// import 'package:app/screens/landing_screen.dart';
-import 'package:app/screens/onBoarding_screen.dart';
+import 'package:app/screens/auth/signin_screen.dart';
+import 'package:app/screens/auth/signup_screen.dart';
+import 'package:app/screens/landing/onboarding_screen.dart';
+import 'package:app/themes/theme.dart';
 
 void main(List<String> args) => runApp(const MyApp());
 
@@ -9,16 +12,44 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = ThemeText.lightTheme();
     return MaterialApp(
-      title: 'Basic Widgets',
-      debugShowCheckedModeBanner: false,
-      theme:
-          ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey)),
-      // home: const LandingPage(),
-      home: const OnBoardingScreen(),
-    );
+        title: 'JustDuit',
+        debugShowCheckedModeBanner: false,
+        theme: theme,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const OnBoardingScreen(),
+          '/SignUp': (context) => const SignUpScreen(),
+          '/SignIn': (context) => const SignInScreen(),
+        });
   }
 }
+
+
+// basic widget
+
+// import 'package:flutter/material.dart';
+// // import 'package:app/screens/landing_screen.dart';
+// import 'package:app/screens/onBoarding_screen.dart';
+
+// void main(List<String> args) => runApp(const MyApp());
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Basic Widgets',
+//       debugShowCheckedModeBanner: false,
+//       theme:
+//           ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey)),
+//       // home: const LandingPage(),
+//       home: const OnBoardingScreen(),
+//     );
+//   }
+// }
 
 
 

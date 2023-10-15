@@ -6,10 +6,10 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: ListView(
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Image.asset('assets/images/gambar.png'),
+          Image.asset('assets/images/gambar1.png'),
           Container(
             width: 250,
             height: 250,
