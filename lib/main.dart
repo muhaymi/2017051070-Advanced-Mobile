@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:app/screens/landing_screen.dart';
-void main() {
-  runApp(const MyApp());
-}
+// import 'package:app/screens/landing_screen.dart';
+import 'package:app/screens/onBoarding_screen.dart';
+
+void main(List<String> args) => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,16 +10,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Basic Widgets',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const LandingPage(),
+      theme:
+          ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey)),
+      // home: const LandingPage(),
+      home: const OnBoardingScreen(),
     );
   }
 }
+
+
+
+
 
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key, required this.title});
