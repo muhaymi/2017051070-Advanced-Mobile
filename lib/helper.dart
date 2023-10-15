@@ -18,6 +18,7 @@ void main(List<String> args) {
   // print(b);
   // print (tambah(7, 7));
   hasil(tambah);
+  hasil2(kurang);
 
 
 }
@@ -27,6 +28,12 @@ Function tambah = (int a, int b) => a + b;
 
 void hasil(Function tambah){
   print(tambah(3, 7));
+}
+
+Function kurang = (int a, int b) => a - b;
+
+void hasil2(Function kurang){
+  print(kurang(10, 3));
 }
 
 // int tambah(int a, int b){
