@@ -1,4 +1,4 @@
-import 'dart:io';
+// import 'dart:io';
 // late String nama;
 void main(List<String> args) {
   // Object nama;
@@ -9,7 +9,6 @@ void main(List<String> args) {
   // var a  = [1];
   // var b = [2, a];
 
-
   // print(nama);
 
   // List a = [1,2, 3];
@@ -19,20 +18,17 @@ void main(List<String> args) {
   // print (tambah(7, 7));
   hasil(tambah);
   hasil2(kurang);
-
-
 }
-
 
 Function tambah = (int a, int b) => a + b;
 
-void hasil(Function tambah){
+void hasil(Function tambah) {
   print(tambah(3, 7));
 }
 
 Function kurang = (int a, int b) => a - b;
 
-void hasil2(Function kurang){
+void hasil2(Function kurang) {
   print(kurang(10, 3));
 }
 
